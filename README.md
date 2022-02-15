@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title
+    Just Go: A user-friendly, innovative web application that allows users explore local areas using geolocation to find places recommended by locals.
 
-## Getting Started
+# Project Description
+     The motivation behind this project was to provide both travelers and visitors a curated, 5 stop location itinerary that allows users to explore and get to know local neighborhoods. The app's primary focus is to provide users with a manageable itinerary that can be accomplished in less than a day. When users login to the app they are presented with various routes that contain 5 stops, all within a certain radius and walking distance. Users can choose which route to take by pressing the 'Just Go' button and begin their exploration of a neighborhood. To alleviate the stress of navigating through an unknown area, the app includes three key functionalities to assist the user getting from location to location: geolocation, real-time street view, and user friendly directions . Currently, the app is specific to the Tokyo area, but with goals to expand to more locations.   
 
-First, run the development server:
+## Requirements
+    Before continuing, ensure that the latest version of node is installed: v16.13.2
 
-```bash
-npm run dev
-# or
-yarn dev
+## Getting Started 
+```
+- Install npm packages: npm install
+- Clone repo: git clone https://github.com/brianlee9090/CC24-seniorprojectfront
+- Start frontend: npm run dev
+- Start backend: npm start:dev
+```
+   
+### Test Break down:
+
+- backend: npm run test
+    The test in the backend use Jest to verify that the URLs are retrieving the correct data from the database and passed to the front end.
+
+## Tech-stack:
+
+    This project uses the React and Next.js frameworks. Next.js provides various features to optomize production: hybrid & static server rendering, Typescript support, smart bundling, route pre-fetching, and more with no config needed. And for design, we incorporated the Chakra UI component library to build our React application. 
+```
+- Frontend:
+    - React.js
+    - Next.js
+    - Chakra UI
+- Server:
+    - Nestjs
+- ORM
+    - Mongoose
+- Database
+    - MongoDB
+- Deployment
+    - Frontend: Vercel
+    - Backend: AWS/Heroku
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Features 
+    The key feature of 'Just Go' is to provide the user with the ability to navigate an unknown area by: (1) accessing the users geolocation; (2) using and continuously accessing the user's geolocation to provide a real-time street view as they navigate through a neighborhood; and (3) provide the user with up-to-date directions as their geolocation changes
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Usage 
+<a href=""><img src="./images/image1.png" height="300px" margin="auto">
+<a href=""><img src="./images/image3.png" height="300px">
+<a href=""><img src="./images/image2.png" height="300px">
+</a>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Contributing
+    If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thank you.
 
-## Learn More
+    Fork the Project
+    Create your Feature Branch (git checkout -b feature/AmazingFeature)
+    Commit your Changes (git commit -m 'Add some AmazingFeature')
+    Push to the Branch (git push origin feature/AmazingFeature)
+    Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Credits 
+- Brian Lee
+- Ana Scuturici
+- Wesley Lee
+- Richard Beavis
+- Roman Montoya
